@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Newsreader:opsz@6..72&family=Noto+Sans+Arabic:wght@200;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Newsreader:opsz@6..72&family=Noto+Sans+Arabic:wght@500&display=swap');
+body {
+
+}
+
+.topnav {
+    width: 100%;
+    height: 3em;
+    background: orange;
+    font-family: monospace;
+    font-size: 25px;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body {
+    width: 90%;
+    height: auto;
+    margin: 3em auto;
+    background: rgb(216, 216, 216);
+    position: relative;
+    border-radius: 10px;
+}
+
+.main-Info {
+    font-size: 18px;
+    color: black;
+    margin-top: 80px;
+    position: relative;
+    width: 90%;
+    margin-left: 1em;
+    padding-top: 10px;
+}
+
+.Info {
+    font-size: 18px;
+    color: black;
+    position: relative;
+    width: 90%;
+    margin-left: 1em;
+    padding-bottom: 10px;
+}
+
+.butn-nav1 {
+    width: 90%;
+    height: 5em;
+    margin-left: 1em;
+    margin-bottom: 10px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 15px;
+    background: rgb(216, 216, 216);
+}
+
+.butn-nav1:hover {
+    background: rgb(136, 136, 136);
+}
+
+.butn-nav2 {
+    width: 4em;
+    height: 4em;
+    margin-left: 10px;
+    border-radius: 50px;
+    border: 0px; 
+    background: rgb(255, 111, 0);
+}
+
+.butn-nav2:hover {
+    background: orangered;
+}
+
+.butn-books {
+    width: 90%;
+    height: 2em;
+    margin-left: 1em;
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background: rgb(216, 216, 216);
+}
+
+.butn-books:hover {
+    background: rgb(136, 136, 136);
+}
+
+.QuranSEL {
+    font-size: 30px;
+    font-family: 'Noto Sans Arabic';
+    border: 0px;
+    border-radius: 30px;
+    background: orange;
+}
+
+/* Style the search box */
+#mySearch {
+    margin-top: 4em;
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+  }
+  
+  /* Style the navigation menu */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style the navigation links */
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+  }
+  
+  #myMenu li a:hover {
+    background-color: #eee;
+  }
+
+.ayatbody-bismi {
+    width: 90%;
+    height: auto;
+    margin: 3em auto;
+    margin-top: 5em;
+    background: rgb(216, 216, 216);
+    position: relative;
+    margin-bottom: 0px;
+    border-radius: 10px;
+}
+
+.ayatbody-bismi:hover {
+    background: rgb(128, 128, 128);
+}
+
+.ayatbody {
+    width: 90%;
+    height: auto;
+    margin: 3em auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: rgb(216, 216, 216);
+    position: relative;
+    border-radius: 10px;
+}
+
+.ayatbody:hover {
+    background: rgb(128, 128, 128);
+}
+
+.Ayats {
+    margin: 10px;
+    font-family: 'Noto Sans Arabic';
+    font-size: 30px;
+    right: 0px;
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    background:;
+}
+
+.AyatMeaning-ENG {
+    margin: 10px;
+    margin-top: 10px;
+    position: relative;
+}
