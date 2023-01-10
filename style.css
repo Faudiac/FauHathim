@@ -156,19 +156,17 @@ body {
 }
 
 .Ayats {
-    margin: 10px;
+    width: auto;
     font-family: 'Noto Sans Arabic';
     font-size: 30px;
     right: 0px;
+    margin-left: 50px;
     position: relative;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    background:;
 }
 
 .AyatMeaning-ENG {
     margin: 10px;
     margin-top: 10px;
+    padding-bottom: 10px;
     position: relative;
 }
