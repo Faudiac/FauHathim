@@ -173,7 +173,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 1em;
+    width: 13px;
   }
    
   body::-webkit-scrollbar-track {
@@ -188,4 +188,11 @@ body::-webkit-scrollbar {
   
   body::-webkit-scrollbar-thumb:hover {
     background: orangered;
+  }
+
+
+.dark-mode {
+    background-color: black;
+    trans
+    color:;
   }
