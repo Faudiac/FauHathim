@@ -28,6 +28,16 @@ body {
     border-radius: 10px;
 }
 
+.body2 {
+    width: 90%;
+    height: auto;
+    margin: 3em auto;
+    margin-top: 7em;
+    background: rgba(14, 243, 10, 0.243);
+    position: relative;
+    border-radius: 10px;
+}
+
 .main-Info {
     font-size: 18px;
     color: white;
