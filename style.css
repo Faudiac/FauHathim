@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Newsreader:opsz@6..72&family=Noto+Sans+Arabic:wght@200;400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Newsreader:opsz@6..72&family=Noto+Sans+Arabic:wght@500&display=swap');
 body {
-
+    background-image: linear-gradient(to bottom,rgb(73, 138, 73), rgb(50, 113, 50),rgb(24, 48, 24));
 }
 
 .topnav {
     width: 100%;
     height: 3em;
-    background: orange;
+    background: rgb(26, 78, 27);
     font-family: monospace;
     font-size: 25px;
     top: 0px;
@@ -16,21 +16,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 4px 8px 0 #1d3b1b, 0 6px 20px 0 rgb(33, 55, 53); 
 }
 
 .body {
     width: 90%;
     height: auto;
     margin: 3em auto;
-    background: rgb(216, 216, 216);
+    background: rgba(14, 243, 10, 0.243);
     position: relative;
     border-radius: 10px;
 }
 
 .main-Info {
     font-size: 18px;
-    color: black;
-    margin-top: 80px;
+    color: white;
+    margin-top: 5em;
     position: relative;
     width: 90%;
     margin-left: 1em;
@@ -39,7 +40,7 @@ body {
 
 .Info {
     font-size: 18px;
-    color: black;
+    color: rgb(255, 255, 255);
     position: relative;
     width: 90%;
     margin-left: 1em;
@@ -54,11 +55,11 @@ body {
     border: 0px;
     border-radius: 10px;
     font-size: 15px;
-    background: rgb(216, 216, 216);
+    background: rgba(14, 243, 10, 0.135);
 }
 
 .butn-nav1:hover {
-    background: rgb(136, 136, 136);
+    background: rgba(14, 243, 10, 0.509);
 }
 
 .butn-nav2 {
@@ -70,6 +71,7 @@ body {
     background: rgb(255, 111, 0);
     transition-duration: 500ms;
     bottom: 5px;
+    right: 5px;
     position: fixed;
 }
 
@@ -84,11 +86,11 @@ body {
     border: 0px;
     border-radius: 5px;
     margin-bottom: 5px;
-    background: rgb(216, 216, 216);
+    background: rgba(14, 243, 10, 0.135);
 }
 
 .butn-books:hover {
-    background: rgb(136, 136, 136);
+    background: rgba(14, 243, 10, 0.509);
 }
 
 .QuranSEL {
@@ -96,7 +98,7 @@ body {
     font-family: 'Noto Sans Arabic';
     border: 0px;
     border-radius: 30px;
-    background: orange;
+    background: transparent;
 }
 
 /* Style the search box */
@@ -105,7 +107,7 @@ body {
     width: 100%;
     font-size: 18px;
     padding: 11px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd42;
     border-radius: 30px;
   }
   
@@ -120,12 +122,12 @@ body {
   #myMenu li a {
     padding: 12px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     display: block
   }
   
   #myMenu li a:hover {
-    background-color: #eee;
+    background-color: #2a5c2c;
   }
 
 .ayatbody-bismi {
