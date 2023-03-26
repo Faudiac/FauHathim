@@ -247,3 +247,38 @@ img {
     position: relative;
     box-shadow: 0 4px 8px 0 #26909a, 0 6px 20px 0 rgb(0, 255, 229); 
 }
+
+.vidcard-holder {
+    width: 90%;
+    height: auto;
+    background: rgba(172, 255, 47, 0.208);
+    border-radius: 10px;
+    margin: 3em auto;
+}
+
+video {
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.Vid-name {
+    font-size: 25px;
+    margin: 15px;
+    margin-bottom: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+details {
+    width: 90%;
+    margin-left: 15px;
+    background: rgba(172, 255, 47, 0.462);
+    border-radius: 10px;
+    margin-top: 5px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.video-details {
+    margin-left: 15px;
+}
+
