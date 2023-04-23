@@ -120,8 +120,11 @@ body {
     width: 100%;
     font-size: 18px;
     padding: 11px;
-    border: 1px solid #dddddd42;
+    border: none;
     border-radius: 30px;
+    background: rgba(7, 89, 5, 0.243);
+    outline: none;
+    color: greenyellow;
   }
   
   /* Style the navigation menu */
