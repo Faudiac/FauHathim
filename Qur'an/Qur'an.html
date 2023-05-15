@@ -10,7 +10,24 @@
 
 <body>
 
-<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+  <div class="select-type">
+      <a href="Qur'an.html">
+        <button class="select-surah">Surahs</button>
+      </a>
+      <a href="../Juz/Juz.html">
+        <button class="select-surah">Juz</button>
+      </a>
+  </div>
+
+  <div class="search-container">
+    <a class="Search-butn2" href="#">
+      <ion-icon name="search-outline" size="large"></ion-icon>
+    </a> 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div class="lineverticle"></div>
+    <input type="search" id="mySearch" onkeyup="myFunction()" placeholder="Search Surahs.." title="Type your search here" autocomplete="off">
+</div>
 
 <ul id="myMenu">
   <li><a href="Surah1.html">Surah Al-Fathiha (1)</a></li>

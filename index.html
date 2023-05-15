@@ -9,10 +9,59 @@
 </head>
 
 <body>
+    
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="Searchpopup-box">
 
-    <div class="daily-notifications">
-        <img src="Ramadan Poster.png" alt="ramadan poster">
+            <div class="search-container">
+                <a class="Search-butn2" href="#">
+                  <ion-icon name="search-outline" size="large"></ion-icon>
+                </a> 
+                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                <div class="lineverticle"></div>
+                <input type="search" id="mySearch" onkeyup="myFunction()" placeholder="Search Surahs.." title="Type your search here" autocomplete="off">
+            </div>
+            
+            <div class="di">
+                <ul id="myMenu">
+                    <li><a href="Qur'an/Surah1.html">Surah Al Fathiha</a></li>
+                    <li><a href="Qur'an/juz1.html">Juz 1</a></li>
+                    <li><a href="Qur'an/Surah67.html">Surah Al Mulk</a></li>
+                    <li><a href="Qur'an/surah36.html">Surah Ya-sin </a></li>
+                    <div class="line3"></div>
+                </ul>
+              </div>
+
+        </div>
     </div>
+
+        <img src="images/modified quran.png" alt="desgin" class="MainBACK-pic">
+
+        <div class="searchpop" onclick="openSearch()">
+            <a class="Search-butn" href="#">
+                <ion-icon name="search-outline" size="large"></ion-icon>
+              </a> 
+              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </div>
+
+        <div class="body">
+        
+            <p class="main-Info">
+                - Qur'an , Hadith , prophet stories and more islamic books are availible on this website.
+            </p>
+
+            <p class="main-Info">
+                - Easy to naviagte with english translations to Ayats 
+            </p>
+
+            <p class="main-Info">
+                - proof read by a muslim
+            </p>
+            
+        </div>
 
     <div class="body">
         
@@ -36,18 +85,6 @@
             Below this you will see the navigation area. From here your discovery of islam today begins...
         </p>
 
-        <a href="Books.html">
-            <button class="butn-nav1">
-                Read Books
-            </button>
-        </a>
-
-        <a href="watch video's/main.html">
-            <button class="butn-nav1">
-                Watch Videos
-            </button>
-        </a>
-
         <a href="https://faudiac.github.io/Faudiax/">
             <button class="butn-nav1">
                 Support Us!
@@ -58,8 +95,74 @@
     </div>
 
     <div class="topnav">
-        <h1>Faudiac</h1>
+        
+        <button class="opennav" onclick="openNav()">☰</button> 
+
+        <a href="index.html">
+            <img src="Homelogo.png" alt="Logo" class="homelogo">
+        </a>
+
     </div>
+
+    <script>
+        function openSearch() {
+          document.getElementById("myOverlay").style.display = "block";
+        }
+        
+        function closeSearch() {
+          document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+<script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+    
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+
+<div id="myNav" class="overlay2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay2-content">
+      <a href="index.html">Home</a>
+      <a onclick="openSearch()">Search</a>
+      <a href="">About us</a>
+        <a href="">Services</a>
+        <div class="line3"></div>
+        <a href="Qur'an/Qur'an.html">Qur'an</a>
+        <a href="Juz/Juz.html">Juz</a>
+        <div class="line3"></div>
+        <a href="">Hadith books</a>
+        <a href="">Prophet Stories</a>
+        <a href="">Islamic Stories</a>
+        <div class="line3"></div>
+        <a href="">Islamic Calander</a>
+    </div>
+</div>
 
 </body>
 

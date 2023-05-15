@@ -6,16 +6,13 @@ body {
 
 .topnav {
     width: 100%;
-    height: 3em;
+    height: 2.5em;
     background: rgb(26, 78, 27);
     font-family: monospace;
     font-size: 25px;
     top: 0px;
     left: 0px;
     position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     box-shadow: 0 4px 8px 0 #1d3b1b, 0 6px 20px 0 rgb(33, 55, 53); 
 }
 
@@ -23,6 +20,7 @@ body {
     width: 90%;
     height: auto;
     margin: 3em auto;
+    margin-top: 1em;
     background: rgba(14, 243, 10, 0.243);
     position: relative;
     border-radius: 10px;
@@ -102,7 +100,7 @@ body {
 }
 
 .butn-books:hover {
-    background: rgba(26, 153, 24, 0.638);
+    background: rgba(255, 255, 255, 0.638);
 }
 
 .QuranSEL {
@@ -110,42 +108,13 @@ body {
     font-family: 'Noto Sans Arabic';
     border: 0px;
     border-radius: 30px;
+    position: relative;
+    text-align: right;
+    right: 0px;
     background: transparent;
+    width: 50%;
     color: white;
 }
-
-/* Style the search box */
-#mySearch {
-    margin-top: 5em;
-    width: 100%;
-    font-size: 18px;
-    padding: 11px;
-    border: none;
-    border-radius: 30px;
-    background: rgba(7, 89, 5, 0.243);
-    outline: none;
-    color: greenyellow;
-  }
-  
-  /* Style the navigation menu */
-  #myMenu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* Style the navigation links */
-  #myMenu li a {
-    padding: 12px;
-    text-decoration: none;
-    transition-duration: 500ms;
-    color: rgb(255, 255, 255);
-    display: block
-  }
-  
-  #myMenu li a:hover {
-    background-color: #2a5c2c;
-  }
 
 .ayatbody-bismi {
     width: 90%;
@@ -194,25 +163,6 @@ body {
     position: relative;
 }
 
-body::-webkit-scrollbar {
-    width: 13px;
-  }
-   
-  body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-  }
-   
-  body::-webkit-scrollbar-thumb {
-    background-color: orange;
-    outline: 1px solid orangered;
-    border-radius: 50px;
-  }
-  
-  body::-webkit-scrollbar-thumb:hover {
-    background: orangered;
-  }
-
-
 .dark-mode {
     background-color: black;
     transition-duration: 500ms;
@@ -247,9 +197,49 @@ img {
     margin: 5px;
     margin-top: 6em;
     margin-bottom: 0px;
-    position: relative;
-    box-shadow: 0 4px 8px 0 #26909a, 0 6px 20px 0 rgb(0, 255, 229); 
+    position: relative; 
 }
+
+.homelogo {
+    width: 200px;
+    padding: 0;
+    margin: 10px;
+    margin-left: 2em;
+}
+
+.MainBACK-pic {
+    opacity: 50%;
+    width: 100%;
+    right: 0px;
+    left: 0px;
+    margin: 0;
+    margin-top: 3em;
+    border-radius: 0px;
+    position: fixed;
+    top: 0px;
+}
+
+.searchpop {
+    width: 90%;
+    height: 3em;
+    margin: 3em auto;
+    margin-top: 60%;
+    background: rgba(14, 243, 10, 0.243);
+    position: relative;
+    border-radius: 50px;
+    border: 0px;
+}
+
+.Search-butn {
+    margin-left: 10px;
+    margin-top: 8px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+  }
+  
+  .Search-butn:hover {
+    color: rgb(15, 43, 0);
+  }
 
 .vidcard-holder {
     width: 90%;
@@ -285,3 +275,225 @@ details {
     margin-left: 15px;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+  }
+  
+  .Searchpopup-box {
+    position: relative;
+    top: 20%;
+    width: 80%;
+    height: 40%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+  }
+  
+  .overlay .closebtn {
+    width: 1em;
+    height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+    border-radius: 50px;
+  }
+  
+  .overlay .closebtn:hover {
+    color: #ccc;
+    background: #1d3b1b;
+  }
+  
+    .overlay2 .closebtn {
+    width: 1em;
+    height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+    border-radius: 50px;
+  }
+  
+  .overlay2 .closebtn:hover {
+    color: #ccc;
+    background: #1d3b1b;
+  }
+  
+  .search-container {
+    width: 90%;
+    height: 3em;
+    margin: 3em auto;
+    background: rgba(245, 222, 179, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 50px;
+  }
+  
+  .lineverticle {
+    width: 1px;
+    height: 70%;
+    margin-left: 5px;
+    border-radius: 50px;
+    background: rgb(0, 0, 0);
+  }
+  
+  .Search-butn2 {
+    margin-left: 5px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .Search-butn2:hover {
+    color: rgb(5, 250, 10);
+  }
+  
+  #mySearch {
+    width: 90%;
+    height: 3em;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    background-color:transparent;
+    margin-left: 5px;
+    border: 0px solid;
+    outline: none;
+  }
+  
+  .overlay button:hover {
+    background: #bbb;
+  }
+
+  .line3 {
+    width: 90%;
+    margin-left: 14px;
+    height: 1px;
+    background: #ffffff42;
+  }
+
+  .di {
+    margin: 4em auto;
+    padding:4px;
+    width: 90%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+  }
+
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  /* Style the navigation links */
+  #myMenu li a {
+    width: 90%;
+    padding: 12px;
+    transition-duration: 500ms;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    border-radius: 50px;
+  }
+  
+  #myMenu li a:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.266);
+  }
+
+  .opennav {
+    width: 4.8em;
+    height: 4.8em;
+    left: 0px;
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+    position: fixed;
+  }
+  
+  .opennav:hover {
+    background: rgba(0, 255, 42, 0.484);
+  }
+  
+  .overlay2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay2-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    margin-top: 30px;
+    background: rgba(119, 101, 101, 0);
+  }
+  
+  .overlay2 a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay2 a:hover, .overlay a:focus {
+    color: #f1f1f1;
+    background: rgba(83, 167, 95, 0.463);
+  }
+  
+  .overlay2 .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+.select-surah {
+    margin-top: 8em;
+    width: 6em;
+    height: 3em;
+    border-radius: 50px;
+    border: 1px solid greenyellow;
+    background: darkgreen;
+}
