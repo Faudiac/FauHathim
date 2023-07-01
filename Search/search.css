@@ -1,0 +1,89 @@
+
+body {
+    background: black;
+}
+
+.search-container {
+    width: 70%;
+    margin: 2em auto;
+    height: 3em;
+    background: rgba(245, 222, 179, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(147, 147, 147);
+    border-radius: 50px;
+  }
+
+  .lineverticle {
+    width: 1px;
+    height: 70%;
+    border-radius: 50px;
+    background: rgb(80, 80, 80);
+  }
+  
+  .Search-butn {
+    margin-left: 5px;
+    color: rgb(80, 80, 80);
+  }
+  
+  .Search-butn:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  #mySearch {
+    width: 93%;
+    height: 3em;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 0px solid;
+    outline: none;
+  }
+  
+/*the container must be positioned relative:*/
+.autocomplete {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid  #151515;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #15151500; 
+    border: 1px solid #000000; 
+    border-radius: 10px;
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: #4c4c4c; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: rgb(255, 143, 30) !important; 
+    color: #ffffff; 
+  }
+  
+  #historyLine{
+    text-align: center;
+    width: 50%;
+    height: auto;
+    background-color: rgba(255, 140, 0, 0.264);
+    border-radius: 10px;
+    margin: 3em auto;
+  }

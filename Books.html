@@ -28,6 +28,18 @@
             </button>
         </a>
 
+
+        <a href="Prophet stories/prophets.html">
+            <button class="butn-books">
+                Hadith-Books
+            </button>
+        </a>
+
+        <a href="Prophet stories/prophets.html">
+            <button class="butn-books">
+                Islamic novels
+            </button>
+        </a>
         <p > we are still in the process of writting the entire Hathim </p>
 
     </div>
@@ -39,10 +51,43 @@
     </a>
 
     <div class="topnav">
-        <h1>Faudiac</h1>
+        
+        <button class="opennav" onclick="openNav()">☰</button> 
+
+        <a href="index.html">
+            <img src="Homelogo.png" alt="Logo" class="homelogo">
+        </a>
 
     </div>
 
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+    
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+      </script>
+    
+    <div id="myNav" class="overlay2">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay2-content">
+          <a href="index.html">Home</a>
+          <a onclick="openSearch()">Search</a>
+          <a href="">About us</a>
+            <a href="">Services</a>
+            <div class="line3"></div>
+            <a href="Qur'an/Qur'an.html">Qur'an</a>
+            <a href="Juz/Juz.html">Juz</a>
+            <div class="line3"></div>
+            <a href="">Hadith books</a>
+            <a href="">Prophet Stories</a>
+            <a href="">Islamic Stories</a>
+            <div class="line3"></div>
+            <a href="">Islamic Calander</a>
+        </div>
+    </div>
 </body>
 
 </html>
