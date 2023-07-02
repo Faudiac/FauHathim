@@ -5,22 +5,41 @@ function openPage() {
         window.open("../index.html");
     }
 
-    if (x === "Al-Mulk") {
-        window.open("../Qur'an/Surah67.html");
+    if (x === "Dua's") {
+      window.open("../Dua's/Dua.html");
+    }
+
+    if (x === "Morning and Evening dua") {
+      window.open("../Dua's/Morning&Evening.html");
     }
 
     if (x === "Al-Yaseen") {
         window.open("../Qur'an/Surah36.html");
     }
 
+    if (x === "Al-Mulk") {
+      window.open("../Qur'an/Surah67.html");
+    }
+
     if (x === "Al-Ikhlas") {
         window.open("../Qur'an/Surah112.html");
     }
 
-    if (x === "Services ads") {
-        window.open("services/ads .html");
+    if (x === "Al-Falaq") {
+      window.open("../Qur'an/Surah113.html");
     }
 
+    if (x === "Al-Nas") {
+      window.open("../Qur'an/Surah114.html");
+    }
+
+    if (x === "Faudiax") {
+        window.open("https://faudiac.github.io/Faudiax/");
+    }
+
+    if (x === "FaudyNews") {
+      window.open("https://faudiac.github.io/OfficialFaudyNEWS/");
+    } 
 
 }
 
@@ -122,6 +141,10 @@ function openPage() {
   }
   
   /*An array containing all the country names in the world:*/
-  var countries = [ "Home","Al-Yaseen", "Al-Ikhlas", "Al-Mulk","Services ads"  ]
+  var countries = [ "Home","Faudiax", "FaudyNews", 
+  
+  "Al-Yaseen","Al-Mulk", "Al-Ikhlas", "Al-Falaq", "Al-Nas",
+  
+  "Dua's", "Morning and Evening dua",]
   /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
   autocomplete(document.getElementById("mySearch"), countries);
