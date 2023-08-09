@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Fauzaan</title>
+    <link rel="stylesheet" href="Mobile.css">
+    <link rel="shortcut icon" type="x-icon" href="img/FauHathim logo .png">
+</head>
+
+<body>
+
+        <img src="img/Design background.png" alt="desgin" class="MainBACK-pic">
+        
+        <img src="img/Qur'an Calligraphy.png" alt="desgin" class="MainBACK-pic">
+
+        <form autocomplete="off">
+            <div class="searchpop">
+
+                <a class="Search-butn" href="#">
+                    <ion-icon name="search-outline" size="large"></ion-icon>
+                </a>
+
+                <div class="lineverticle"></div> 
+                <div class="autocomplete" style="width:95%;">
+                    <input type="search" id="mySearch" onchange="openPage()" placeholder="let your curiosity guide you.." title="Type your search here">
+                </div>
+            </div>
+        </form>
+
+    <div class="body">
+
+        <a href="./Qur'an/Qur'an.html">
+            <button class="butn-nav1">
+                Open Qur'an
+            </button>
+        </a>
+
+        <a href="./Dua's/Dua.html">
+            <button class="butn-nav1">
+                Open Dua's
+            </button>
+        </a>
+
+        <div class="line"></div>
+
+        <p class="Info">
+            Al-Fauzaan is an App where you can study and learn all about islam. This apps main purpose is 
+            to help Muslims get closer to Allah (SWT) and have a better understanding of our religion Islam.
+        </p>
+
+        <p class="Info">
+            From this very app you can watch Islamic video's, Search Islamic informations and read stories about the 
+            Prophets and many more islamic books.
+        </p>
+
+    </div>
+
+    <div class="topnav">
+        
+        <button class="opennav" onclick="openNav()">☰</button> 
+
+        <a href="index.html">
+            <img src="img/Homelogo.png" alt="Logo" class="homelogo">
+        </a>
+
+    </div>
+
+
+    <div id="myNav" class="overlay2">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay2-content">
+        <a href="index.html">Home</a>
+        <a href="Search/Search.html">Search</a>
+        <a href="">About us</a>
+            <a href="">Services</a>
+            <div class="line3"></div>
+            <a href="Qur'an/Qur'an.html">Qur'an</a>
+            <a href="Dua's/Dua.html">Dua's</a>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+    <script src="js/search.js"></script>
+    <script src="js/AutoFill.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
