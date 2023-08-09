@@ -38,6 +38,16 @@ body {
     border-radius: 10px;
 }
 
+.body3 {
+  width: 100%;
+  height: auto;
+  margin: 1em auto;
+  background: rgba(62, 128, 61, 0);
+  position: relative;
+  border-radius: 10px;
+}
+
+
 .main-Info {
     font-size: 18px;
     color: white;
@@ -503,12 +513,21 @@ details {
   }
 
 .select-surah {
-    margin-top: 13em;
-    width: 6em;
+    width: 50%;
     height: 3em;
-    border-radius: 50px;
-    border: 1px solid greenyellow;
-    background: darkgreen;
+    float: left;
+    margin: 1em auto;
+    font-size: 18px;
+    color: white;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid greenyellow;
+    background: rgba(0, 100, 0, 0.134);
+    transition-duration: 100ms;
+}
+.select-surah:hover {
+  background: greenyellow;
+  font-size: 19px;
 }
 
 /*Search:*/
